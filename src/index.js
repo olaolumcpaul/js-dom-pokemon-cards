@@ -1,6 +1,6 @@
 console.log(data);
 
-const cardsList = document.querySelector(".cards");
+const cardsList = document.querySelector("ul.cards");
 
 for (let i = 0; i < data.length; i++) {
   const pokemon = data[i];
@@ -11,12 +11,12 @@ for (let i = 0; i < data.length; i++) {
   const pokemonName = document.createElement("h2");
   pokemonName.classList.add("card--text");
   pokemonName.textContent = pokemon.name;
+  pokemonName.style.textTransform = "capitalize";
   card.appendChild(pokemonName);
 
   const pokemonImage = document.createElement("img");
   pokemonImage.src = pokemon.sprites.other["official-artwork"].front_default;
   pokemonImage.width = 256;
-  pokemonImage.height = 256;
   card.appendChild(pokemonImage);
 
   const pokemonStats = document.createElement("ul");

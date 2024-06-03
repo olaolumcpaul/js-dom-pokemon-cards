@@ -5,6 +5,7 @@
 html,
 body {
   margin: 0;
+  list-style-type: none;
 }
 
 body {
@@ -25,6 +26,9 @@ h2 {
   text-align: center;
 }
 
+ul {
+  list-style-type: none;
+}
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fill, 375px);
